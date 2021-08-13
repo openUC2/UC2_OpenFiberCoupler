@@ -3,32 +3,32 @@
 <a href="#logo" name="logo"><img src="https://raw.githubusercontent.com/bionanoimaging/UC2-GIT/master/IMAGES/UC2_logo_text.png" width="400"></a>
 </p>
 
-# openUC2 *PROJECT_NAME*
+# openUC2 Open Fiber Coupler
 ---
 
-This repository will help you to build and setup *A NICE TOOL*.
+This repository will help you to build and setup a fully functional XYZ fiber coupler for single- and multimode fibers for a tens of the price of a commercial system.
 
-*DESCRIBE WHAT IT DOES AND WHAT IT IS FOR.*
+It hosts two flexurebearing-based cubes that can manipulate a coupling objective lens in XY and the fiber in Z. Both are pushed with Thorlabs micrometer screws.
+
 
 Curious to see what this looks like? Keep scrolling!
 
-*INCLUDE A NICE PICTURE AND/OR SCHEME.*
-
 <p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/"></a>
+<a href="#logo" name="logo"><img src="./IMAGES/Application_OpenFiberCoupling.png"></a>
 </p>
 
-The overall price is in the range *OF LESS THAT A ZILLION*.
+
+The overall price is in the range 120-150€.
 
 
 ***Features:***
-* IT MOVES?!
-* IT TAKES IMAGES?!
-* IT DOES YOUR LAUNDRY?!
-
+* XY flexure bearing (inspired from Rainer Heintzmann)
+* Z flexure bearing
+* micrometer-precision movement using micrometer screws
+* Low-cost and open-source
+* Fiber-coupling of single- and multimode fibers possible
 
 # Table of Content
-* **[Software](#-software)**
 * **[Hardware](#-hardware)**
 * **[Bill of materials](#-bill-of-materials)**
 * **[Electronics](#-electronics)**
@@ -36,26 +36,17 @@ The overall price is in the range *OF LESS THAT A ZILLION*.
 
 
 ## In-Action
-*SHARE YOUR FANCY GIF HERE. IT MOVES!*
+
+A comparison of a commercially available stage by edmund optics and the UC2 equivalent.
 
 <p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/" width="600"></a>
+<a href="#logo" name="logo"><img src="./IMAGES/comparison.png" width="600"></a>
 </p>
 
 
-# Software
-*HOW DO I CONTROL THIS THING?*
-
-## Custom Python code *IF APPLICABLE*
-We also provide a code example for driving the device using a python driver. Please refer to the code and the package in the folder [PYTHON](./PYTHON).
-
-## *CUSTOM FANCY SOFTWARE*
-We also provide *SOME SORCERY* for driving the device. Find the files in folder [*MY_AWESOME_SOFTWARE*]().
-
 # Hardware
 
-Below we describe how the device can be build and assembled in order to replicate the whole system as shown in the rendering above. One needs additional parts that can be found in the core [openUC2 repository](https://github.com/bionanoimaging/UC2-GIT).
-
+Below we describe how the device can be build and assembled in order to replicate the whole system as shown in the rendering above. All STLs are located in the folder [STL](./STL). All design files for Autodesk INVENTOR 2019 are located in the folder [INVENTOR](./INVENTOR).
 
 ## Bill of material
 
@@ -63,64 +54,67 @@ Below you will find all components necessary to build this device
 
 ### 3D printing files
 
-All these files need to be printed. We used a Prusa i3 MK3 using PLA Prusament (Galaxy Black) at layer height x.x mm and infill xx%.
+All these files need to be printed. We used a Prusa i3 MK3 using PLA Prusament (Galaxy Black) at layer height 0.3 mm and infill 100%.
 
-
-|  Type | Details  |  Price | Link  |
-|---|---|---|---|
-| *FANCY* Holder |  *IT HOLD OTHER FANCY PARTS* |  x,xx € | [Part.stl](./STL/)  |
-
+You need:
+* 1x XY Translational Cube
+* 1x Z Translational Cube
+* 1x Laser Cube
 
 ### Additional parts
 This is used in the current version of the setup
 
 |  Type | Details  |  Price | Link  |
 |---|---|---|---|
-| *FANCY* Part | *IT DOES SOME MAGIC* |  xx € | [My favourite online shop]()  |
-
+| 3D Printing Nozzle, 0.4mm, | Holds and centers the fiber  |  5 € | [Amazon](https://www.amazon.de/Stck-3D-Drucker-D%C3%BCse-Nozzle-0-4mm/dp/B0858644GN/ref=asc_df_B0858644GN/?tag=googshopde-21&linkCode=df0&hvadid=427629760683&hvpos=&hvnetw=g&hvrand=7848213166897452147&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042960&hvtargid=pla-905298383747&psc=1&th=1&psc=1&tag=&ref=&adgrpid=99568786716&hvpone=&hvptwo=&hvadid=427629760683&hvpos=&hvnetw=g&hvrand=7848213166897452147&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042960&hvtargid=pla-905298383747)  |
+| 3D Printing Nozzle, 0.4mm, | Holds and centers the fiber  |  5 € | [Amazon](https://www.amazon.de/Stck-3D-Drucker-D%C3%BCse-Nozzle-0-4mm/dp/B0858644GN/ref=asc_df_B0858644GN/?tag=googshopde-21&linkCode=df0&hvadid=427629760683&hvpos=&hvnetw=g&hvrand=7848213166897452147&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042960&hvtargid=pla-905298383747&psc=1&th=1&psc=1&tag=&ref=&adgrpid=99568786716&hvpone=&hvptwo=&hvadid=427629760683&hvpos=&hvnetw=g&hvrand=7848213166897452147&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042960&hvtargid=pla-905298383747)  |
+|Micrometer Screw | Pushes XYZ | 5 | [THORLABS](https://www.thorlabs.com/thorproduct.cfm?partnumber=F6SS088) |
+|Micrometer Thread | Holds micrometer screw XYZ | 5 | [THORLABS](https://www.thorlabs.com/thorproduct.cfm?partnumber=F6SSN2P) |
+| 10x finite corrected objective lens | focuses the beam | 30 | [Optics Pro](https://www.thorlabs.com/thorproduct.cfm?partnumber=F6SSN2P) |
+| 4x M3 Screws  | Fix micrometer thread  | 0.30 | [Various]() |
 ### Design files
-The original design files are in the [INVENTOR](./INVENTOR) folder. *FOR ANOTHER FORMAT, GET YOUR OWN FOLDER.*
-
-
-### Electronics
-*THE FANCY ELECTRONICS TO RUN THE MOTOR! ...OR WHATEVER YOU USE THERE.*
+The original design files are in the [INVENTOR](./INVENTOR) folder.
 
 
 ### Assembly of the DEVICE
 
-***1.*** *These are the parts needed for the DEVICE*
+This will follow soon.
+
+***1.*** *Assemble the XY translational stage*
 
 <p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
+<a> <img src="./IMAGES/Assembly_Cube_Flexuremanipulator_v3.png" width="500"></a>
 </p>
 
-***2.*** *Start by ...*
+* Add threading inserts
+* Add micrometer screws
+* Fix threading with M3 screws (it will scratch the thread!)
+* Add the objective lens to the inserts
+* Add the insert to the cube
+* Done
+
+***2.*** *Assemble the Z translational stage*
 
 <p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
+<a> <img src="./IMAGES/Assembly_Cube_Flexuremanipulator_zonly_v3.png" width="300"></a>
 </p>
 
-***2.*** *Continue with ...*
+* Add 3d printing Nozzle
+* Add threading inserts
+* Add micrometer screws
+* Fix threading with M3 screws (it will scratch the thread!)
+* Add the insert to the cube
+* Add fiber, fix it with "chewing gum" (**TODO:** Needs to be optimized..)
+* Done
 
-<p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
-</p>
+***3.*** *Coupling*
 
-***2.*** *DONE! LOOK AT THE BEAUTY!*
-
-<p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
-</p>
+Align the focus with respect to the fiber opening
 
 
-## Showcase
-*AWESOME RESULTS!*
+***3.*** *DONE! LOOK AT THE BEAUTY!*
 
-<p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
-</p>
 
-***Fig 1.*** *MY MOST AWSOME IMAGE*
 
 
 ## Get Involved
