@@ -70,7 +70,7 @@ This is used in the current version of the setup
 | 3D Printing Nozzle, 0.4mm, | Holds and centers the fiber  |  5 € | [Amazon](https://www.amazon.de/Stck-3D-Drucker-D%C3%BCse-Nozzle-0-4mm/dp/B0858644GN/ref=asc_df_B0858644GN/?tag=googshopde-21&linkCode=df0&hvadid=427629760683&hvpos=&hvnetw=g&hvrand=7848213166897452147&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042960&hvtargid=pla-905298383747&psc=1&th=1&psc=1&tag=&ref=&adgrpid=99568786716&hvpone=&hvptwo=&hvadid=427629760683&hvpos=&hvnetw=g&hvrand=7848213166897452147&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9042960&hvtargid=pla-905298383747)  |
 |Micrometer Screw | Pushes XYZ | 5 | [THORLABS](https://www.thorlabs.com/thorproduct.cfm?partnumber=F6SS088) |
 |Micrometer Thread | Holds micrometer screw XYZ | 5 | [THORLABS](https://www.thorlabs.com/thorproduct.cfm?partnumber=F6SSN2P) |
-| 10x finite corrected objective lens | focuses the beam | 30 | [Optics Pro](https://www.thorlabs.com/thorproduct.cfm?partnumber=F6SSN2P) |
+| 10x finite corrected objective lens | focuses the beam | 30 | [Optics Pro](https://www.optik-pro.de/fuer-mikroskope/windaus-objektiv-10x-fuer-hpm-100er-modelle/p,7108) |
 | 4x M3 Screws  | Fix micrometer thread  | 0.30 | [Various]() |
 ### Design files
 The original design files are in the [INVENTOR](./INVENTOR) folder.
